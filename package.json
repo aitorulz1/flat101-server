@@ -1,0 +1,11 @@
+{
+  "name": "flat101_server",
+  "version": "1.0.0",
+  "description": "aplicación básica (SPA), con React o Vue que incluye dos pantallas: una con un",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Aitor Arina",
+  "license": "ISC"
+}
