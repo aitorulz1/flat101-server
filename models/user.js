@@ -1,4 +1,5 @@
 const mongoose = require("mongoose");
+const Flats = require("./flat");
 
 const UserSchema = mongoose.Schema(
   {
@@ -15,7 +16,7 @@ const UserSchema = mongoose.Schema(
     },
     password: {
       type: String,
-      minlength: 6,
+      minlength: 3,
     },
   },
   {
@@ -33,5 +34,12 @@ const UserSchema = mongoose.Schema(
     },
   }
 );
+
+UserSchema.virtual("flats", {
+  ref: Flats.modelName,
+  localField: "_id",
+  foreignField: "user",
+  justOne: false,
+});
 
 module.exports = mongoose.model("User", UserSchema);

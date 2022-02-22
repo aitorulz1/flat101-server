@@ -16,15 +16,19 @@ const FlatSchema = mongoose.Schema({
     max: 1000,
     default: 0,
   },
-  image: {
+  flatPicture: {
     type: String,
-    default:
-      "https://media-exp1.licdn.com/dms/image/C4E0BAQGM_4MQY1HgdA/company-logo_200_200/0/1603130780338?e=2159024400&v=beta&t=ydiaRXuOJ7OHdlTIp68jMjDTO_eQzvXXFidHlyJZTYA",
+    default: null,
+    // "https://media-exp1.licdn.com/dms/image/C4E0BAQGM_4MQY1HgdA/company-logo_200_200/0/1603130780338?e=2159024400&v=beta&t=ydiaRXuOJ7OHdlTIp68jMjDTO_eQzvXXFidHlyJZTYA",
   },
   created: {
     type: Date,
     max: Date.now,
     default: Date.now,
+  },
+  user: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: "User",
   },
 });
 

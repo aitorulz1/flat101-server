@@ -38,6 +38,6 @@ app.listen(PORT, () => {
   console.log(`El servidor está funcionando en el puerto ${PORT}`);
 });
 
-// app.use("/users", require("./routes/user"));
-// app.use("/auth", require("./routes/auth"));
+app.use("/users", require("./routes/user"));
+app.use("/auth", require("./routes/auth"));
 app.use("/flats", require("./routes/flat"));
