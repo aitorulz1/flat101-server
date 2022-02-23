@@ -5,5 +5,7 @@ const auth = require("../middleware/auth");
 
 router.post("/", flatsController.createFlat);
 router.get("/", flatsController.getAllFlats);
+router.get("/:type", flatsController.findTypes);
+router.get("/types", flatsController.getTypes);
 
 module.exports = router;
