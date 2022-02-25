@@ -1,4 +1,4 @@
-# Flat 101 APP <img src="./assets/images/readme-rastreator.png" width="200px" />
+# Flat 101 APP 
 Rastreator es el mayor buscador de seguros y, en esta aplicación podrás encontrar los seguros de coches y préstamos catalogados por coberturas y ordenados de menor a mayor precio.
 Los préstamos están ordenados de menor a mayor a partir de los 10.000€.
 
@@ -8,11 +8,11 @@ Los préstamos están ordenados de menor a mayor a partir de los 10.000€.
 - Clone this Repo "git clone + url"
 
 ```sh
-git clone https://github.com/aitorulz1/client-rastreator.git
+git clone https://github.com/aitorulz1/flat101-client.git
 ```
 
 ```sh
-git clone https://github.com/aitorulz1/server-rastreator.git
+git clone https://github.com/aitorulz1/flat101-server.git
 ```
 
 
@@ -40,13 +40,13 @@ npm run server
 ```
 
 El servidor corre en [http://localhost:4000/]
-Podremos comrobar los endpoints en:
+Podremos comprobar el endpoint en:
 
-- [http://localhost:4000/insurances] Para los seguro
-- [http://localhost:4000/loans] Para los préstamos
+- [http://localhost:4000/flats] Para los productos subidos.
+
 
 
 # Usabilidad
-Para dispositivos móviles, podrás seleccionar la fila de precios que más te interese y podrás deslizarla a modo carrousel para poder ver todos los seguros y tipos de préstamos.
+En la página principal, pulse el botón inferior para acceder a la página donde podrá encontrar los ditintos productos subidos. Tiene dos menus. Uno tipo burger menu para móvil y otro superior en el header para desktop. A través de estospodrá accede al formulario en el que podrá subir los productos deseado y se verán reflejados en la página de "flats". Los productos se almacenan en una base de datos de MongoDB.
 
-<img src="./assets/images/responsive-screen.jpg" />
+
